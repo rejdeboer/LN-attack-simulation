@@ -1,0 +1,16 @@
+stages:
+  - demo
+  - test
+
+demo attack:
+  image: python:3.8
+  stage: demo
+  before_script:
+    - pip3 install -r requirements.txt
+  script:
+    - echo '[]' > results.json
+    - python3 demo.py
+    - python3 results.py
+  artifacts:
+    paths:
+      - results.json
