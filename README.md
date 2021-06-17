@@ -1,5 +1,7 @@
 # Attacking Lightning's Anonymity
 
+DISCLAIMER: This repository is an extension of the work found at https://github.com/SatwikPrabhu/Attacking-Lightning-s-anonymity
+
 An attack that enables an intermediary to break the anonymity of the source and destination of a trannsaction in the Lightning network. 
 
 This includes a simulator to simulate transactions using **LND**(https://github.com/lightningnetwork/lnd/blob/master/routing/pathfind.go), **c-Lightning**(https://github.com/ElementsProject/lightning/blob/f3159ec4acd1013427c292038b88071b868ab1ff/common/route.c) and **Eclair**(https://github.com/ACINQ/eclair/blob/master/eclair-core/src/main/scala/fr/acinq/eclair/router/Router.scala). 
@@ -36,4 +38,3 @@ The following results can be obtained from *results.py*:
 - Number of transactions for which either source or the destination anonymity set was a singular set or both.
 - The number of transactions attacked by each adversary.
 - Correlation of the number of hops from the adversary to source/destination to the size of source/destination anonymity set.
-
